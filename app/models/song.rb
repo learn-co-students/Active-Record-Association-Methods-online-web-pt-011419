@@ -12,7 +12,6 @@ class Song < ActiveRecord::Base
     #drake = Artist.create(name: "Drake")
     # drake.songs << self
     # self.artist
-    drake = self.build_artist(:name => "Drake")
-    #self.save
+    drake = self.create_artist(:name => "Drake")
   end
 end
